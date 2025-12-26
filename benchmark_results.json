@@ -1,0 +1,62 @@
+[
+  {
+    "method": "none",
+    "env": "DeceptiveMaze",
+    "success_rate": 1.0,
+    "coverage": 0.9422222222222222,
+    "mean_return": 13.213407854413756,
+    "mean_episode_length": 179.06666666666666,
+    "first_success_episode": 0,
+    "training_time": 2.9986870288848877
+  },
+  {
+    "method": "rnd",
+    "env": "DeceptiveMaze",
+    "success_rate": 1.0,
+    "coverage": 0.8977777777777778,
+    "mean_return": 10.896772413068796,
+    "mean_episode_length": 120.03333333333333,
+    "first_success_episode": 0,
+    "training_time": 5.34925389289856
+  },
+  {
+    "method": "simhash",
+    "env": "DeceptiveMaze",
+    "success_rate": 0.3,
+    "coverage": 0.4311111111111111,
+    "mean_return": 4.446582118154163,
+    "mean_episode_length": 450.0,
+    "first_success_episode": 4,
+    "training_time": 4.42087197303772
+  },
+  {
+    "method": "none",
+    "env": "KeyDoor",
+    "success_rate": 0.06666666666666667,
+    "coverage": 1.0,
+    "mean_return": 0.6666666666666666,
+    "mean_episode_length": 422.73333333333335,
+    "first_success_episode": 2,
+    "training_time": 3.900106191635132
+  },
+  {
+    "method": "rnd",
+    "env": "KeyDoor",
+    "success_rate": 0.0,
+    "coverage": 1.0,
+    "mean_return": 0.04974935891723112,
+    "mean_episode_length": 432.0,
+    "first_success_episode": null,
+    "training_time": 27.389721870422363
+  },
+  {
+    "method": "simhash",
+    "env": "KeyDoor",
+    "success_rate": 0.0,
+    "coverage": 0.7777777777777778,
+    "mean_return": 4.2426136712328,
+    "mean_episode_length": 432.0,
+    "first_success_episode": null,
+    "training_time": 5.738515853881836
+  }
+]

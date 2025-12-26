@@ -158,7 +158,7 @@ class KeyDoorEnv(gym.Env):
 
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
-        self.agent_pos = np.array([size // 2, size // 2], dtype=np.float32)
+        self.agent_pos = np.array([self.size // 2, self.size // 2], dtype=np.float32)
         self.has_key = False
         self.steps = 0
         return self._get_obs(), {}

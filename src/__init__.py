@@ -25,6 +25,11 @@ from .counting import SimHashCounter, StateActionCounter, PseudoCountModule, GoE
 from .byol_explore import BYOLExplore, WorldModelCuriosity
 from .skills import DIAYN, DADS, HierarchicalExplorer
 from .multiagent import MultiAgentCuriosity, EMC, CERMICCuriosity, CompetitiveCuriosity
+from .go_explore import GoExplore, GoExploreTrainer, CellArchive, StateEncoder
+from .llm_curiosity import (
+    ELLMExplorer, EurekaRewardGenerator, LanguageConditionedCuriosity,
+    MockLLM, GridWorldDescriber, RoboticsDescriber
+)
 
 __all__ = [
     # Core
@@ -66,4 +71,16 @@ __all__ = [
     "ExplorationMetrics",
     "CompressionMetrics",
     "InformationGain",
+    # Go-Explore
+    "GoExplore",
+    "GoExploreTrainer",
+    "CellArchive",
+    "StateEncoder",
+    # LLM-Based Curiosity
+    "ELLMExplorer",
+    "EurekaRewardGenerator",
+    "LanguageConditionedCuriosity",
+    "MockLLM",
+    "GridWorldDescriber",
+    "RoboticsDescriber",
 ]
