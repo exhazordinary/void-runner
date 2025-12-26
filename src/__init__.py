@@ -22,6 +22,9 @@ from .compound import CompoundCuriosity, AdversarialCuriosity, CuriosityType
 from .metrics import ExplorationMetrics, CompressionMetrics, InformationGain
 from .drnd import DRND, NGUCombinedCuriosity, NGUEpisodicMemory
 from .counting import SimHashCounter, StateActionCounter, PseudoCountModule, GoExploreArchive
+from .byol_explore import BYOLExplore, WorldModelCuriosity
+from .skills import DIAYN, DADS, HierarchicalExplorer
+from .multiagent import MultiAgentCuriosity, EMC, CERMICCuriosity, CompetitiveCuriosity
 
 __all__ = [
     # Core
@@ -35,11 +38,22 @@ __all__ = [
     "DRND",
     "NGUCombinedCuriosity",
     "NGUEpisodicMemory",
+    "BYOLExplore",
+    "WorldModelCuriosity",
     # Count-Based
     "SimHashCounter",
     "StateActionCounter",
     "PseudoCountModule",
     "GoExploreArchive",
+    # Skill Discovery
+    "DIAYN",
+    "DADS",
+    "HierarchicalExplorer",
+    # Multi-Agent
+    "MultiAgentCuriosity",
+    "EMC",
+    "CERMICCuriosity",
+    "CompetitiveCuriosity",
     # Advanced Curiosity
     "EmpowermentModule",
     "CausalCuriosity",
