@@ -30,6 +30,18 @@ from .llm_curiosity import (
     ELLMExplorer, EurekaRewardGenerator, LanguageConditionedCuriosity,
     MockLLM, GridWorldDescriber, RoboticsDescriber
 )
+from .adversarial_curiosity import (
+    AdversarialCuriosity, SelfPlayCuriosity, CuriosityBottleneck,
+    StateDiscriminator, StateGenerator
+)
+from .curiosity_diagnostics import (
+    CuriosityCollapseDetector, CuriosityHealthMonitor, CuriositySnapshot,
+    instrument_curiosity_module
+)
+from .meta_curiosity import (
+    CuriosityTransfer, AdaptiveCuriosity, CuriosityEnsemble,
+    CuriosityScheduler, UniversalCuriosityEncoder
+)
 
 __all__ = [
     # Core
@@ -83,4 +95,21 @@ __all__ = [
     "MockLLM",
     "GridWorldDescriber",
     "RoboticsDescriber",
+    # Adversarial Curiosity
+    "AdversarialCuriosity",
+    "SelfPlayCuriosity",
+    "CuriosityBottleneck",
+    "StateDiscriminator",
+    "StateGenerator",
+    # Diagnostics
+    "CuriosityCollapseDetector",
+    "CuriosityHealthMonitor",
+    "CuriositySnapshot",
+    "instrument_curiosity_module",
+    # Meta-Curiosity
+    "CuriosityTransfer",
+    "AdaptiveCuriosity",
+    "CuriosityEnsemble",
+    "CuriosityScheduler",
+    "UniversalCuriosityEncoder",
 ]
